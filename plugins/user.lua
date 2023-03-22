@@ -1,4 +1,7 @@
 return {
+  "RRethy/vim-illuminate",
+  "tveskag/nvim-blame-line",
+  { "echasnovski/mini.nvim", version = "*" },
   -- You can also add new plugins here as well:
   -- Add plugins, the lazy syntax
   -- "andweeb/presence.nvim",

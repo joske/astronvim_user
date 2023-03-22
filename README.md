@@ -1,8 +1,26 @@
-# AstroNvim User Configuration Example
+# AstroNvim User Configuration
 
-A user configuration template for [AstroNvim](https://github.com/AstroNvim/AstroNvim)
+A user configuration for [AstroNvim](https://github.com/AstroNvim/AstroNvim)
 
 ## 🛠️ Installation
+
+To use this config, make sure to have the following packages available on the system:
+
+- neovim (duh)
+- rust/rust-analyzer/rustfmt
+- nodejs
+- npm
+- python-pip
+- ruby
+- zip/unzip/gzip
+- lazygit/git
+- latex
+- fzf
+- ripgrep
+- lldb
+- llvm/clang/clangd/clang-format
+- yarn
+- optional: gdu, bottom
 
 #### Make a backup of your current nvim and shared folder
 
@@ -26,7 +44,7 @@ You can also just clone this repository directly if you do not want to track you
 #### Clone the repository
 
 ```shell
-git clone https://github.com/<your_user>/<your_repository> ~/.config/nvim/lua/user
+git clone https://github.com/joske/astronvim_user ~/.config/nvim/lua/user
 ```
 
 #### Start Neovim

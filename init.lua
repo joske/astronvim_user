@@ -18,7 +18,7 @@ return {
   },
 
   -- Set colorscheme to use
-  colorscheme = "astrodark",
+  colorscheme = "lunar",
 
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
@@ -69,17 +69,23 @@ return {
   -- augroups/autocommands and custom filetypes also this just pure lua so
   -- anything that doesn't fit in the normal config locations above can go here
   polish = function()
-    -- Set up custom filetypes
-    -- vim.filetype.add {
-    --   extension = {
-    --     foo = "fooscript",
-    --   },
-    --   filename = {
-    --     ["Foofile"] = "fooscript",
-    --   },
-    --   pattern = {
-    --     ["~/%.config/foo/.*"] = "fooscript",
-    --   },
-    -- }
+    vim.cmd "set title"
+    vim.cmd [[nnoremap <expr> <silent> 0 col('.') == match(getline('.'),'S')+1 ? '0' : '^']]
+    -- configure the litee.nvim library
+    require("litee.lib").setup {}
+    -- configure litee-calltree.nvim
+    require("litee.calltree").setup {}
+    require("bufferline").setup {}
+    if vim.g.neovide then
+      -- Put anything you want to happen only in Neovide here
+      vim.g.neovide_remember_window_size = true
+      vim.g.neovide_cursor_vfx_mode = ""
+    end
+
+    require("lspconfig").clangd.setup {
+      capabilities = {
+        offsetEncoding = { "utf-16" },
+      },
+    }
   end,
 }
