@@ -28,6 +28,6 @@ return {
   },
   t = {
     -- setting a mapping to false will disable it
-    -- ["<esc>"] = false,
+    ["<esc>"] = false,
   },
 }
