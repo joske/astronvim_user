@@ -17,7 +17,7 @@ return {
       end,
       desc = "Pick to close",
     },
-    ["<leader>r"] = { desc = "Rust Tools" },
+    ["<leader>r"] = { name = " Rust Tools" },
     ["<leader>rm"] = { function() require("rust-tools").expand_macro.expand_macro() end, desc = "Expand Macro" },
     ["<leader>rr"] = { function() require("rust-tools").hover_actions.hover_actions() end, desc = "Rust Hover Actions" },
     ["<leader>rs"] = { function() require("rust-tools").ssr.ssr() end, desc = "Structural Search Replace" },
