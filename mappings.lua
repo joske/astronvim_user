@@ -28,10 +28,23 @@ return {
     ["<leader>rb"] = { function() require("rust-tools").runnables.runnables() end, desc = "Rust Runnables" },
     ["<leader>rd"] = { function() require("rust-tools").debuggables.debuggables() end, desc = "Rust Runnables" },
     ["<leader>rj"] = { function() require("rust-tools").join_lines.join_lines() end, desc = "Join Lines" },
-    ["<leader>rc"] = {
+    ["<leader>rC"] = {
       function() require("rust-tools").open_cargo_toml.open_cargo_toml() end,
       desc = "Open Cargo.toml",
     },
+    ["<leader>rc"] = { name = "Crates" },
+    ["<leader>rcr"] = { function() require("crates").reload() end, desc = "Reload Crates" },
+    ["<leader>rcf"] = { function() require("crates").show_features_popup() end, desc = "Show Features" },
+    ["<leader>rcv"] = { function() require("crates").show_versions_popup() end, desc = "Show Versions" },
+    ["<leader>rcd"] = { function() require("crates").show_dependencies_popup() end, desc = "Show Dependencies" },
+    ["<leader>rcu"] = { function() require("crates").update() end, desc = "Update Crate" },
+    ["<leader>rca"] = { function() require("crates").update_all_crates() end, desc = "Update All Crates" },
+    ["<leader>rcU"] = { function() require("crates").upgrade_crate() end, desc = "Upgrade Crate" },
+    ["<leader>rcA"] = { function() require("crates").upgrade_all_crates() end, desc = "Upgrade All Crates" },
+    ["<leader>rcH"] = { function() require("crates").open_homepage() end, desc = "Open Homepage" },
+    ["<leader>rcR"] = { function() require("crates").open_repository() end, desc = "Open Repository" },
+    ["<leader>rcD"] = { function() require("crates").open_documentation() end, desc = "Open Documentation" },
+    ["<leader>rcC"] = { function() require("crates").open_crates_io() end, desc = "Open crates.io" },
     -- tables with the `name` key will be registered with which-key if it's installed
     -- this is useful for naming menus
     ["<leader>b"] = { name = "Buffers" },
