@@ -13,7 +13,7 @@ return {
   { import = "astrocommunity.pack.yaml" },
   { import = "astrocommunity.pack.json" },
   { import = "astrocommunity.pack.markdown" },
-  { import = "astrocommunity.editing-support.nvim-ts-rainbow" },
+  { import = "astrocommunity.editing-support.nvim-ts-rainbow2" },
   {
     "Saecki/crates.nvim",
     init = function()
