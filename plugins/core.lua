@@ -2,6 +2,7 @@ return {
   -- customize alpha options
   {
     "goolord/alpha-nvim",
+    enabled = false,
     opts = function(_, opts)
       -- customize the dashboard header
       opts.section.header.val = {
@@ -19,6 +20,16 @@ return {
       }
       return opts
     end,
+  },
+  {
+    "nvim-neo-tree/neo-tree.nvim",
+    opts = {
+      filesystem = {
+        filtered_items = {
+          always_show = { ".github", ".gitignore" },
+        },
+      },
+    },
   },
   -- You can disable default plugins as follows:
   -- { "max397574/better-escape.nvim", enabled = false },

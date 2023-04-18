@@ -17,6 +17,8 @@ return {
       end,
       desc = "Pick to close",
     },
+    ["<leader>m"] = { desc = "󱁤 Compiler" },
+    ["<leader>mt"] = { "<cmd>TexlabBuild<cr>", desc = "LaTeX" },
     ["<leader>lc"] = { desc = "Calls" },
     ["<leader>lci"] = { function() vim.lsp.buf.incoming_calls() end, desc = "Incoming Calls" },
     ["<leader>lco"] = { function() vim.lsp.buf.outgoing_calls() end, desc = "Outgoing Calls" },
