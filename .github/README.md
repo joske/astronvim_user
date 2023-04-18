@@ -1,8 +1,22 @@
-# AstroNvim User Configuration Example
+# AstroNvim User Configuration
 
-A user configuration template for [AstroNvim](https://github.com/AstroNvim/AstroNvim)
+A user configuration for [AstroNvim](https://github.com/AstroNvim/AstroNvim)
 
 ## 🛠️ Installation
+
+To use this config, make sure to have the following packages available on the system:
+
+- astronvim (duh)
+- rust
+- nodejs
+- python-pip
+- ruby
+- zip/unzip/gzip
+- lazygit/git
+- latex
+- ripgrep
+- lldb
+- optional: gdu, bottom
 
 #### Make a backup of your current nvim and shared folder
 
