@@ -68,17 +68,13 @@ return {
     require("litee.lib").setup {}
     -- configure litee-calltree.nvim
     require("litee.calltree").setup {}
-    -- Set up custom filetypes
-    -- vim.filetype.add {
-    --   extension = {
-    --     foo = "fooscript",
-    --   },
-    --   filename = {
-    --     ["Foofile"] = "fooscript",
-    --   },
-    --   pattern = {
-    --     ["~/%.config/foo/.*"] = "fooscript",
-    --   },
-    -- }
+    local map = require "mini.map"
+    map.setup {
+      integrations = {
+        map.gen_integration.builtin_search(),
+        map.gen_integration.diagnostic(),
+        map.gen_integration.gitsigns(),
+      },
+    }
   end,
 }
