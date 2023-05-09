@@ -64,6 +64,14 @@ return {
   -- anything that doesn't fit in the normal config locations above can go here
   polish = function()
     vim.cmd [[nnoremap <expr> <silent> 0 col('.') == match(getline('.'),'S')+1 ? '0' : '^']]
+    -- map Alt-J/K to move lines up and down
+    vim.cmd [[nnoremap <A-j> :m .+1<CR>==]]
+    vim.cmd [[nnoremap <A-k> :m .-2<CR>==]]
+    vim.cmd [[inoremap <A-j> <Esc>:m .+1<CR>==gi]]
+    vim.cmd [[inoremap <A-k> <Esc>:m .-2<CR>==gi]]
+    vim.cmd [[vnoremap <A-j> :m '>+1<CR>gv=gv]]
+    vim.cmd [[vnoremap <A-k> :m '<-2<CR>gv=gv]]
+    -- on macos Alt-J sends ∆ and Alt-K sends ˚
     vim.cmd [[nnoremap ∆ :m .+1<CR>==]]
     vim.cmd [[nnoremap ˚ :m .-2<CR>==]]
     vim.cmd [[inoremap ∆ <Esc>:m .+1<CR>==gi]]
