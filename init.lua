@@ -64,18 +64,16 @@ return {
   -- anything that doesn't fit in the normal config locations above can go here
   polish = function()
     vim.cmd [[nnoremap <expr> <silent> 0 col('.') == match(getline('.'),'S')+1 ? '0' : '^']]
+    vim.cmd [[nnoremap ∆ :m .+1<CR>==]]
+    vim.cmd [[nnoremap ˚ :m .-2<CR>==]]
+    vim.cmd [[inoremap ∆ <Esc>:m .+1<CR>==gi]]
+    vim.cmd [[inoremap ˚ <Esc>:m .-2<CR>==gi]]
+    vim.cmd [[vnoremap ∆ :m '>+1<CR>gv=gv]]
+    vim.cmd [[vnoremap ˚ :m '<-2<CR>gv=gv]]
     -- configure the litee.nvim library
     require("litee.lib").setup {}
     -- configure litee-calltree.nvim
     require("litee.calltree").setup {}
-    local map = require "mini.map"
-    map.setup {
-      integrations = {
-        map.gen_integration.builtin_search(),
-        map.gen_integration.diagnostic(),
-        map.gen_integration.gitsigns(),
-      },
-    }
     vim.o.guifont = "UbuntuMono Nerd Font:h14"
     if vim.g.neovide then
       -- Put anything you want to happen only in Neovide here
