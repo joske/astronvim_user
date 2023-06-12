@@ -86,6 +86,7 @@ return {
     require("litee.lib").setup {}
     -- configure litee-calltree.nvim
     require("litee.calltree").setup {}
+    require("bufferline").setup {}
     vim.o.guifont = "UbuntuMono Nerd Font:h14"
     if vim.g.neovide then
       -- Put anything you want to happen only in Neovide here
