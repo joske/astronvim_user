@@ -55,9 +55,7 @@ return {
     -- tables with the `name` key will be registered with which-key if it's installed
     -- this is useful for naming menus
     ["<leader>b"] = { name = "Buffers" },
-    ["<leader>gB"] = { "<cmd>ToggleBlameLine<CR>", desc = "Blame" },
-    -- quick save
-    -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+
     -- Trouble
     ["<leader>x"] = { desc = "Trouble" },
     ["<leader>xx"] = { "<cmd>TroubleToggle<cr>", desc = "Trouble" },
@@ -65,6 +63,11 @@ return {
     ["<leader>xd"] = { "<cmd>TroubleToggle lsp_document_diagnostics<cr>", desc = "Trouble Document" },
     ["<leader>xl"] = { "<cmd>TroubleToggle loclist<cr>", desc = "Trouble Location List" },
     ["<leader>xq"] = { "<cmd>TroubleToggle quickfix<cr>", desc = "Trouble Quickfix" },
+    -- Git
+    ["<leader>g"] = { name = "Git" },
+    ["<leader>gs"] = { "<cmd>Git<cr>", desc = "Git Status" },
+    ["<leader>gb"] = { "<cmd>Git blame<cr>", desc = "Git Blame" },
+    ["<leader>gB"] = { "<cmd>ToggleBlameLine<CR>", desc = "Blame" },
     ["<leader>gd"] = { "<cmd>DiffviewOpen<cr>", desc = "Git Diff" },
     ["<leader>gD"] = { "<cmd>DiffviewClose<cr>", desc = "Git Diff Close" },
     ["<leader>gR"] = { "<cmd>DiffviewRefresh<cr>", desc = "Git Diff Refresh" },
