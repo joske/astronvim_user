@@ -58,6 +58,13 @@ return {
     ["<leader>gB"] = { "<cmd>ToggleBlameLine<CR>", desc = "Blame" },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+    ["<leader>gd"] = { "<cmd>DiffviewOpen<cr>", desc = "Git Diff" },
+    ["<leader>gD"] = { "<cmd>DiffviewClose<cr>", desc = "Git Diff Close" },
+    ["<leader>gR"] = { "<cmd>DiffviewRefresh<cr>", desc = "Git Diff Refresh" },
+    ["<leader>gF"] = { "<cmd>DiffviewToggleFiles<cr>", desc = "Git Diff Toggle Files" },
+    ["<leader>gC"] = { "<cmd>DiffviewToggleCache<cr>", desc = "Git Diff Toggle Cache" },
+    ["<leader>gS"] = { "<cmd>DiffviewToggleSigns<cr>", desc = "Git Diff Toggle Signs" },
+    ["<leader>gT"] = { "<cmd>DiffviewToggle<cr>", desc = "Git Diff Toggle" },
   },
   i = {
     ["<c-s>"] = { "<esc>:w<cr>", desc = "Save File" },
