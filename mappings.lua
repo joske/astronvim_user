@@ -58,6 +58,13 @@ return {
     ["<leader>gB"] = { "<cmd>ToggleBlameLine<CR>", desc = "Blame" },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+    -- Trouble
+    ["<leader>x"] = { desc = "Trouble" },
+    ["<leader>xx"] = { "<cmd>TroubleToggle<cr>", desc = "Trouble" },
+    ["<leader>xw"] = { "<cmd>TroubleToggle lsp_workspace_diagnostics<cr>", desc = "Trouble Workspace" },
+    ["<leader>xd"] = { "<cmd>TroubleToggle lsp_document_diagnostics<cr>", desc = "Trouble Document" },
+    ["<leader>xl"] = { "<cmd>TroubleToggle loclist<cr>", desc = "Trouble Location List" },
+    ["<leader>xq"] = { "<cmd>TroubleToggle quickfix<cr>", desc = "Trouble Quickfix" },
     ["<leader>gd"] = { "<cmd>DiffviewOpen<cr>", desc = "Git Diff" },
     ["<leader>gD"] = { "<cmd>DiffviewClose<cr>", desc = "Git Diff Close" },
     ["<leader>gR"] = { "<cmd>DiffviewRefresh<cr>", desc = "Git Diff Refresh" },
