@@ -87,5 +87,6 @@ return {
         offsetEncoding = { "utf-16" },
       },
     }
+    require("telescope").load_extension "live_grep_args"
   end,
 }

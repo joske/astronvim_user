@@ -27,6 +27,10 @@ return {
       end,
       desc = "Pick to close",
     },
+    ["<leader>fs"] = {
+      function() require("telescope").extensions.live_grep_args.live_grep_args() end,
+      desc = "Live Grep Args",
+    },
     ["<leader>m"] = { desc = "󱁤 Compiler" },
     ["<leader>mt"] = { "<cmd>TexlabBuild<cr>", desc = "LaTeX" },
     ["<leader>mc"] = { "<cmd>terminal cargo run<cr>", desc = "Cargo build" },
