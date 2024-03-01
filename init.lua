@@ -4,7 +4,7 @@ return {
     remote = "origin", -- remote to use
     channel = "stable", -- "stable" or "nightly"
     version = "latest", -- "latest", tag name, or regex search like "v1.*" to only do updates before v2 (STABLE ONLY)
-    branch = "nightly", -- branch name (NIGHTLY ONLY)
+    branch = nil, -- branch name (NIGHTLY ONLY)
     commit = nil, -- commit hash (NIGHTLY ONLY)
     pin_plugins = nil, -- nil, true, false (nil will pin plugins on stable only)
     skip_prompts = false, -- skip prompts about breaking changes
@@ -18,7 +18,7 @@ return {
   },
 
   -- Set colorscheme to use
-  colorscheme = "lunar",
+  colorscheme = "vscode",
 
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
