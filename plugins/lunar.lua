@@ -1,6 +1,3 @@
 return {
-  -- customize alpha options
-  {
-    "LunarVim/lunar.nvim",
-  },
+  "LunarVim/lunar.nvim",
 }

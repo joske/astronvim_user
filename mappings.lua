@@ -75,7 +75,7 @@ return {
     ["<leader>b"] = { name = "Buffers" },
 
     -- Trouble
-    ["<leader>x"] = { desc = "Trouble" },
+    ["<leader>x"] = { name = "Trouble" },
     ["<leader>xx"] = { "<cmd>TroubleToggle<cr>", desc = "Trouble" },
     ["<leader>xw"] = { "<cmd>TroubleToggle workspace_diagnostics<cr>", desc = "Trouble Workspace" },
     ["<leader>xd"] = { "<cmd>TroubleToggle document_diagnostics<cr>", desc = "Trouble Document" },
@@ -89,13 +89,14 @@ return {
     ["<leader>gd"] = { "<cmd>DiffviewOpen<cr>", desc = "Git Diff" },
     ["<leader>gD"] = { "<cmd>DiffviewClose<cr>", desc = "Git Diff Close" },
     ["<leader>gR"] = { "<cmd>DiffviewRefresh<cr>", desc = "Git Diff Refresh" },
+    ["<leader>gf"] = { "<cmd>DiffviewFileHistory<cr>", desc = "Git Diff File Hystory" },
     ["<leader>gF"] = { "<cmd>DiffviewToggleFiles<cr>", desc = "Git Diff Toggle Files" },
     ["<leader>gC"] = { "<cmd>DiffviewToggleCache<cr>", desc = "Git Diff Toggle Cache" },
     ["<leader>gS"] = { "<cmd>DiffviewToggleSigns<cr>", desc = "Git Diff Toggle Signs" },
     ["<leader>gT"] = { "<cmd>DiffviewToggle<cr>", desc = "Git Diff Toggle" },
 
     -- Todo
-    ["<leader>T"] = { desc = "TODOs" },
+    ["<leader>T"] = { name = "TODOs" },
     ["<leader>Tt"] = { "<cmd>TodoTelescope<cr>", desc = "Open TODOs in Telescope" },
     ["<leader>Tq"] = { "<cmd>TodoQuickFix<cr>", desc = "Open TODOs in QuickFix" },
     ["<leader>Tx"] = { "<cmd>TodoTrouble<cr>", desc = "Open TODOs in Trouble" },
